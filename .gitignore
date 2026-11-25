@@ -1,0 +1,15 @@
+.DS_Store
+.env
+.env.*
+*.p8
+*.p12
+*.pem
+*.key
+*.mobileprovision
+secrets.yaml
+Config/Local.xcconfig
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+Config/Local/

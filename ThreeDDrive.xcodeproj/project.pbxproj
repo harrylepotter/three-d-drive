@@ -1,0 +1,53 @@
+// !$*UTF8*$!
+{
+ archiveVersion = 1; classes = {}; objectVersion = 56;
+ objects = {
+  01BE78EB6FABA040C75F3FA1 = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Drive.xcconfig"; sourceTree = "<group>"; };
+  F1A4C2C49325A49FC5B550CA = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DriveClient.swift"; sourceTree = "<group>"; };
+  40972FD27E3124174402D883 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DriveIntents.swift"; sourceTree = "<group>"; };
+  4E3AF4C53DB87563328655DF = {isa = PBXGroup; children = (F1A4C2C49325A49FC5B550CA, 40972FD27E3124174402D883); path = "Shared"; sourceTree = "<group>"; };
+  8D0E726B829082E48534860F = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThreeDDrive.swift"; sourceTree = "<group>"; };
+  52297E02B0960CF2798ACFB5 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets.xcassets"; sourceTree = "<group>"; };
+  EEFE4BF6F4F97755A9445A0A = {isa = PBXGroup; children = (8D0E726B829082E48534860F, 52297E02B0960CF2798ACFB5); path = "App"; sourceTree = "<group>"; };
+  6A1727A596E086D71472C4A1 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DriveWidget.swift"; sourceTree = "<group>"; };
+  F340DEECEFB05F75C20CF1A6 = {isa = PBXGroup; children = (6A1727A596E086D71472C4A1); path = "Widget"; sourceTree = "<group>"; };
+  FC999FD3EF3C9BB03C10FEB2 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "App.plist"; sourceTree = "<group>"; };
+  48BE7D553B3C60A010AB9007 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Widget.plist"; sourceTree = "<group>"; };
+  AFDCFE355298204E5EDEC12D = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shared.entitlements"; sourceTree = "<group>"; };
+  79B4CA8D1B9DE26599B7E261 = {isa = PBXGroup; children = (01BE78EB6FABA040C75F3FA1, FC999FD3EF3C9BB03C10FEB2, 48BE7D553B3C60A010AB9007, AFDCFE355298204E5EDEC12D); path = "Config"; sourceTree = "<group>"; };
+  3CAE29604C190B94C353F632 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeDDrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+  6B532D7377C3884B4D46F156 = {isa = PBXFileReference; explicitFileType = wrapper.app-extension; includeInIndex = 0; path = ThreeDHeart.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+  0A3E27B8CA818264D75C8D81 = {isa = PBXGroup; children = (3CAE29604C190B94C353F632, 6B532D7377C3884B4D46F156); path = "Products"; sourceTree = "<group>"; };
+  0D6E4079E36703EBD37C0072 = {isa = PBXGroup; children = (4E3AF4C53DB87563328655DF, EEFE4BF6F4F97755A9445A0A, F340DEECEFB05F75C20CF1A6, 79B4CA8D1B9DE26599B7E261, 0A3E27B8CA818264D75C8D81); sourceTree = "<group>"; };
+  73EBF6644258C120893E685D = {isa = XCBuildConfiguration; baseConfigurationReference = 01BE78EB6FABA040C75F3FA1; buildSettings = {"SDKROOT" = "iphoneos"; "IPHONEOS_DEPLOYMENT_TARGET" = "26.0"; "SWIFT_VERSION" = "5.0"; "CLANG_ENABLE_MODULES" = "YES"; "CODE_SIGN_STYLE" = "Automatic"; "TARGETED_DEVICE_FAMILY" = "1"; "ENABLE_USER_SCRIPT_SANDBOXING" = "YES"; "SWIFT_OPTIMIZATION_LEVEL" = "-Onone"; "SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG"; "DEBUG_INFORMATION_FORMAT" = "dwarf"; "ENABLE_TESTABILITY" = "YES";}; name = Debug; };
+  0B0C687DF8B6B8DC790B519C = {isa = XCBuildConfiguration; baseConfigurationReference = 01BE78EB6FABA040C75F3FA1; buildSettings = {"SDKROOT" = "iphoneos"; "IPHONEOS_DEPLOYMENT_TARGET" = "26.0"; "SWIFT_VERSION" = "5.0"; "CLANG_ENABLE_MODULES" = "YES"; "CODE_SIGN_STYLE" = "Automatic"; "TARGETED_DEVICE_FAMILY" = "1"; "ENABLE_USER_SCRIPT_SANDBOXING" = "YES"; "SWIFT_OPTIMIZATION_LEVEL" = "-O"; "DEBUG_INFORMATION_FORMAT" = "dwarf"; "ENABLE_TESTABILITY" = "NO";}; name = Release; };
+  76F8DEC3DFE0BDB465198890 = {isa = XCConfigurationList; buildConfigurations = (73EBF6644258C120893E685D, 0B0C687DF8B6B8DC790B519C); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  EB63818F08F0A56A318CDB96 = {isa = PBXBuildFile; fileRef = F1A4C2C49325A49FC5B550CA; };
+  E185D6631F12B4490BBBC224 = {isa = PBXBuildFile; fileRef = 40972FD27E3124174402D883; };
+  67CFAA1020F0D7D08DE36BCF = {isa = PBXBuildFile; fileRef = 8D0E726B829082E48534860F; };
+  D23C25153EB4FA887083B385 = {isa = PBXBuildFile; fileRef = 52297E02B0960CF2798ACFB5; };
+  BD72E35169DD7EA39614A29B = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (EB63818F08F0A56A318CDB96, E185D6631F12B4490BBBC224, 67CFAA1020F0D7D08DE36BCF); runOnlyForDeploymentPostprocessing = 0; };
+  71C550EB3C66EE0A6D0E7302 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+  1F53C136E1248D5A040DA9BE = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (D23C25153EB4FA887083B385); runOnlyForDeploymentPostprocessing = 0; };
+  8A1EED22144C3F04485A69EE = {isa = PBXBuildFile; fileRef = 6B532D7377C3884B4D46F156; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+  020D920C741AAE2795AAA476 = {isa = PBXCopyFilesBuildPhase; buildActionMask = 2147483647; dstPath = ""; dstSubfolderSpec = 13; files = (8A1EED22144C3F04485A69EE); name = "Embed App Extensions"; runOnlyForDeploymentPostprocessing = 0; };
+  1241936D4DD3AAD68FE7BFBD = {isa = PBXContainerItemProxy; containerPortal = 244210E48437B6556980A702; proxyType = 1; remoteGlobalIDString = E138C27373E4D889ABB0A7AA; remoteInfo = ThreeDHeart; };
+  8CE3E71EF8635D2BF27913BB = {isa = PBXTargetDependency; target = E138C27373E4D889ABB0A7AA; targetProxy = 1241936D4DD3AAD68FE7BFBD; };
+  FF9974163818F047A73FC03D = {isa = XCBuildConfiguration; buildSettings = {"PRODUCT_BUNDLE_IDENTIFIER" = "$(DRIVE_BUNDLE_ID)"; "PRODUCT_NAME" = "ThreeDDrive"; "INFOPLIST_FILE" = "$(DRIVE_APP_PLIST)"; "CODE_SIGN_ENTITLEMENTS" = "Config/Shared.entitlements"; "SKIP_INSTALL" = "NO"; "LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks"; "ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";}; name = Debug; };
+  514B3F332AC407875ECDCA79 = {isa = XCBuildConfiguration; buildSettings = {"PRODUCT_BUNDLE_IDENTIFIER" = "$(DRIVE_BUNDLE_ID)"; "PRODUCT_NAME" = "ThreeDDrive"; "INFOPLIST_FILE" = "$(DRIVE_APP_PLIST)"; "CODE_SIGN_ENTITLEMENTS" = "Config/Shared.entitlements"; "SKIP_INSTALL" = "NO"; "LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks"; "ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";}; name = Release; };
+  622E883213C5B3603D77FE7B = {isa = XCConfigurationList; buildConfigurations = (FF9974163818F047A73FC03D, 514B3F332AC407875ECDCA79); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  84899824D2A7E6992D21DF14 = {isa = PBXNativeTarget; buildConfigurationList = 622E883213C5B3603D77FE7B; buildPhases = (BD72E35169DD7EA39614A29B, 71C550EB3C66EE0A6D0E7302, 1F53C136E1248D5A040DA9BE, 020D920C741AAE2795AAA476); buildRules = (); dependencies = (8CE3E71EF8635D2BF27913BB); name = ThreeDDrive; productName = ThreeDDrive; productReference = 3CAE29604C190B94C353F632; productType = "com.apple.product-type.application"; };
+  6CE5A21A315B263DA9A9A0C5 = {isa = PBXBuildFile; fileRef = F1A4C2C49325A49FC5B550CA; };
+  FAA53AB6E59B62417F837C30 = {isa = PBXBuildFile; fileRef = 40972FD27E3124174402D883; };
+  C43BBEECF00432525C535709 = {isa = PBXBuildFile; fileRef = 6A1727A596E086D71472C4A1; };
+  69F8FC7CFE1D889F28111C07 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (6CE5A21A315B263DA9A9A0C5, FAA53AB6E59B62417F837C30, C43BBEECF00432525C535709); runOnlyForDeploymentPostprocessing = 0; };
+  290B615610C039A03EBA84E7 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+  A2EACCF9383AE51810E7AE28 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+  0C8CBB959B150D5F6259E0D0 = {isa = XCBuildConfiguration; buildSettings = {"PRODUCT_BUNDLE_IDENTIFIER" = "$(DRIVE_BUNDLE_ID).heart"; "PRODUCT_NAME" = "ThreeDHeart"; "INFOPLIST_FILE" = "$(DRIVE_WIDGET_PLIST)"; "CODE_SIGN_ENTITLEMENTS" = "Config/Shared.entitlements"; "SKIP_INSTALL" = "YES"; "LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks"; "APPLICATION_EXTENSION_API_ONLY" = "YES";}; name = Debug; };
+  8CBC693D8178BE1FB599D28D = {isa = XCBuildConfiguration; buildSettings = {"PRODUCT_BUNDLE_IDENTIFIER" = "$(DRIVE_BUNDLE_ID).heart"; "PRODUCT_NAME" = "ThreeDHeart"; "INFOPLIST_FILE" = "$(DRIVE_WIDGET_PLIST)"; "CODE_SIGN_ENTITLEMENTS" = "Config/Shared.entitlements"; "SKIP_INSTALL" = "YES"; "LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks"; "APPLICATION_EXTENSION_API_ONLY" = "YES";}; name = Release; };
+  5050FD373724092802C6121B = {isa = XCConfigurationList; buildConfigurations = (0C8CBB959B150D5F6259E0D0, 8CBC693D8178BE1FB599D28D); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  E138C27373E4D889ABB0A7AA = {isa = PBXNativeTarget; buildConfigurationList = 5050FD373724092802C6121B; buildPhases = (69F8FC7CFE1D889F28111C07, 290B615610C039A03EBA84E7, A2EACCF9383AE51810E7AE28); buildRules = (); dependencies = (); name = ThreeDHeart; productName = ThreeDHeart; productReference = 6B532D7377C3884B4D46F156; productType = "com.apple.product-type.app-extension"; };
+  244210E48437B6556980A702 = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastUpgradeCheck = 2600; }; buildConfigurationList = 76F8DEC3DFE0BDB465198890; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en,Base); mainGroup = 0D6E4079E36703EBD37C0072; productRefGroup = 0A3E27B8CA818264D75C8D81; projectDirPath = ""; projectRoot = ""; targets = (84899824D2A7E6992D21DF14, E138C27373E4D889ABB0A7AA); };
+ };
+ rootObject = 244210E48437B6556980A702;
+}

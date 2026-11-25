@@ -1,0 +1,8 @@
+// Override these in an untracked Config/Local.xcconfig for a device build.
+DRIVE_BUNDLE_ID = org.example.threeddrive
+DRIVE_SERVER_HOST = radio.example.invalid
+DRIVE_SERVER_SCHEME = https
+DRIVE_SERVER_PORT = 443
+DRIVE_APP_PLIST = Config/App.plist
+DRIVE_WIDGET_PLIST = Config/Widget.plist
+#include? "Local.xcconfig"
